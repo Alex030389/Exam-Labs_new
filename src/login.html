@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('templates/head.html', {'title': 'Exam-Labs | Login'})
+
+<body>
+  <!-- HEADER  -->
+  @@include('templates/header.html', {'search': true})
+
+  <!-- MAIN  -->
+  <main class="page-main">
+    <h1 class="visually-hidden">Exam-Labs login</h1>
+    <section class="login login--page">
+      <div class="login__container container">
+        <form class="login__form form">
+          <h3 class="login__heading heading">Login Now</h3>
+          <p class="login__item form__field-wrapper">
+            <label class="form__label form__label--required" for="sign-in-email">Email</label>
+            <input id="sign-in-email" class="form__field form__field--primary" type="email" name="email">
+          </p>
+          <p class="login__item login__item--no-mb form__field-wrapper">
+            <label class="form__label form__label--required" for="sign-in-password">Password</label>
+            <input id="sign-in-password" class="form__field form__field--primary" type="password" name="password">
+          </p>
+          <a class="login__help-link link link--semibold link--small link--grey" href="#">Forgot Password?</a>
+          <button class="login__button button button--secondary" type="submit">Sign In</button>
+        </form>
+        <a class="login__button login__button--part button button--grey" href="registration.html">I don't have an account</a>
+      </div>
+    </section>
+    <div class="container">
+      @@include('templates/blocks/vce.html', {'classes': ' vce--without-sidebar'})
+    </div>
+  </main>
+
+  <!-- FOOTER  -->
+  @@include('templates/footer.html')
+
+  <!-- DISCOUNT MODAL -->
+  @@include('templates/modals/discount.html')
+
+  <!-- HOW IT WORKS MODAL -->
+  @@include('templates/modals/how-it-works.html')
+
+  <!-- BUTTON UP -->
+  @@include('templates/button-up.html')
+
+  <!-- SCRIPTS  -->
+  @@include('templates/overpage.html')
+</body>
+
+</html>

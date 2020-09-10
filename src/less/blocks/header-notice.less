@@ -1,0 +1,37 @@
+.header-notice {
+  display: none;
+  padding: 1.125rem;
+
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  background-color: @success-color;
+
+  &--shown {
+   display: block; 
+  }
+}
+
+.header-notice__container {
+  position: relative;
+}
+
+.header-notice__text {
+  margin: 0;
+  padding: 0 0.625rem;
+}
+
+.header-notice__close {
+  top: 0;
+  right: 0;
+
+  color: #ffffff;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #ffffff;
+  }
+}

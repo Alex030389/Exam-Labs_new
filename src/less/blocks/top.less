@@ -1,0 +1,44 @@
+.top {
+  &:not(&--files) {
+    padding: 3.125rem 0 0;
+  }
+}
+
+.top__heading {
+  margin-bottom: 1.875rem;
+}
+
+.top__table {
+  &:not(:last-of-type) {
+    margin-bottom: 3.125rem;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .top__table {
+    .table__row {
+      &--border-top {
+        &:first-child {
+          margin: 1.875rem -1.25rem 0;
+          padding: 1.875rem 1.25rem 0;
+          border-top: 1px solid @border-grey-darker;
+        }
+      }
+    }
+
+    &:first-of-type {
+      .table__row {
+        &--border-top {
+          &:first-child {
+            padding-top: 0;
+            border-top: none;
+          }
+        }
+      }
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 0;
+    }
+  }
+}

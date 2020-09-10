@@ -1,0 +1,56 @@
+.canvas {
+  padding: 4.375rem 1.25rem 3.9375rem;
+  min-height: 19rem;
+
+  background: @brand-color @gradient-primary;
+}
+
+.canvas__heading {
+  margin-bottom: 1.25rem;
+
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.canvas__text {
+  margin: 0 auto 1.9375rem;
+  max-width: 35.625rem;
+
+  text-align: center;
+}
+
+.canvas__search {
+  display: flex;
+  margin-top: 0;
+  padding: 0;
+  height: auto;
+
+  background-image: none;
+}
+
+@media (max-width: @mobile-width) {
+  .canvas {
+    padding: 3.9375rem 1.25rem 3.9375rem;
+    margin-top: -1.5rem;
+    min-height: 15.2rem;
+  }
+
+  .canvas__heading {
+    font-weight: 500;
+  }
+}
+
+@media (max-width: @least-mobile-width) {
+  .canvas {
+    min-height: 6.285rem;
+    padding: 2rem 1.25rem;
+  }
+
+  .canvas__heading {
+    font-size: 1.57rem;
+  }
+
+  .canvas__text {
+    display: none;
+  }
+}

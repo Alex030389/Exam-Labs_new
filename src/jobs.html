@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('templates/head.html', {'title': 'Exam-Labs | Job Vacancies'})
+
+<body>
+  <!-- HEADER  -->
+  @@include('templates/header.html', {'search': true})
+
+  <!-- MAIN  -->
+  <main class="page-main">
+    <h1 class="visually-hidden">Exam-Labs Job Vacancies</h1>
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html">Home</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--disabled">
+            <a class="breadcrumbs__link">
+              Job Vacancies</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="separate">
+      <div class="separate__container container">
+
+        <div class="separate__content">
+          <section class="profile">
+            <h2 class="heading heading--mb-large">Apply for a Job</h2>
+            <p class="profile__text text text--grey text--lineheight">We are looking for people who can provide updated exam questions, resell our products to friends and students, write answers (explanations) and write IT Guides, articles and tutorials.</p>
+            <form class="profile__form form">
+              <p class="profile__item">
+                <label class="form__label form__label--required" for="name">Your Name</label>
+                <input id="name" class="form__field form__field--primary" type="text" name="name">
+                <!-- <span class="val_error val_error--active">Please fill in `email` field.</span> -->
+              </p>
+              <p class="profile__item">
+                <label class="form__label form__label--required" for="email">Your Email</label>
+                <input id="email" class="form__field form__field--primary" type="email" name="email">
+                <!-- <span class="val_error val_error--active">Please fill in `email` field.</span> -->
+              </p>
+              <p class="profile__item">
+                <label class="form__label form__label--required" for="skype">Your Skype</label>
+                <input id="skype" class="form__field form__field--primary" type="text" name="skype">
+                <!-- <span class="val_error val_error--active">Please fill in `email` field.</span> -->
+              </p>
+              <fieldset class="profile__item profile__item--full-width form__fieldset">
+                <legend class="form__legend form__legend--label form__legend--label--required">Experience</legend>
+                <ul class="profile__checkbox-list list">
+                  <li class="profile__checkbox-item">
+                    <input id="experiense-1" class="form__checkbox visually-hidden" type="checkbox" name="experiense-1" value="1">
+                    <label class="form__checkbox-label" for="experiense-1">I can Provide Updated Exam Questions I can Provide Updated Exam Questions I can Provide Updated Exam Questions I can Provide Updated Exam Questions</label>
+                  </li>
+                  <li class="profile__checkbox-item">
+                    <input id="experiense-2" class="form__checkbox visually-hidden" type="checkbox" name="experiense-2" value="2">
+                    <label class="form__checkbox-label" for="experiense-2">I can Resell Products</label>
+                  </li>
+                  <li class="profile__checkbox-item">
+                    <input id="experiense-3" class="form__checkbox visually-hidden" type="checkbox" name="experiense-3" value="3">
+                    <label class="form__checkbox-label" for="experiense-3">I can Write Answers & Explanations</label>
+                  </li>
+                  <li class="profile__checkbox-item">
+                    <input id="experiense-4" class="form__checkbox visually-hidden" type="checkbox" name="experiense-4" value="4">
+                    <label class="form__checkbox-label" for="experiense-4">I am a Trainer</label>
+                  </li>
+                  <li class="profile__checkbox-item">
+                    <input id="experiense-5" class="form__checkbox visually-hidden" type="checkbox" name="experiense-5" value="5">
+                    <label class="form__checkbox-label" for="experiense-5">I can Write IT Guides, Articles & Tutorials</label>
+                  </li>
+                </ul>
+                <!-- <span class="val_error val_error--active">Please tell us about your experience.</span> -->
+              </fieldset>
+              <p class="profile__item profile__item--full-width">
+                <label class="form__label" for="comment">Comment</label>
+                <textarea name="comment" class="form__field form__field--primary form__field--textarea" id="comment"></textarea>
+              </p>
+              <div class="profile__verification verification">
+                <div class="verification__container form__field-wrapper form__field-wrapper--verification">
+                  <label class="form__label form__label--required" for="verification">Verification</label>
+                  <input id="verification" class="form__field form__field--primary" type="text" name="verification">
+                  <div class="form__capcha">
+                    <div class="form__capcha-image-wrapper"><img class="form__capcha-image" src="images/dev/captcha.png" alt="Code"></div>
+                    <button class="form__capcha-button button button--secondary" type="button"><img src="images/icons/icon-refresh.png" alt=""><span class="visually-hidden">Refresh</span></button>
+                  </div>
+                  <!-- <span class="val_error val_error--active">Please fill in `email` field.</span> -->
+                </div>
+              </div>
+              <button class="profile__submit button button--secondary" type="submit">Send</button>
+            </form>
+          </section>
+        </div>
+
+        <aside class="separate__sidebar sidebar">
+          @@include('templates/blocks/vce.html')
+          @@include('templates/sidebar/hot.html')
+        </aside>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER  -->
+  @@include('templates/footer.html')
+
+  <!-- HOW IT WORKS MODAL -->
+  @@include('templates/modals/how-it-works.html')
+
+  <!-- FREE DEMO MODAL -->
+  @@include('templates/modals/free-demo.html')
+
+  <!-- BUTTON UP -->
+  @@include('templates/button-up.html')
+
+  <!-- SCRIPTS  -->
+  @@include('templates/overpage.html')
+</body>
+
+</html>

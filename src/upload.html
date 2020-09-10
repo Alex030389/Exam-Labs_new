@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('templates/head.html', {'title': 'Exam-Labs | Upload VCE/PDF Files'})
+
+<body>
+  <!-- HEADER  -->
+  @@include('templates/header.html', {'search': true})
+
+  <!-- MAIN  -->
+  <main class="page-main">
+    <h1 class="visually-hidden">Exam-Labs Upload VCE/PDF Files</h1>
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html">Home</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--disabled">
+            <a class="breadcrumbs__link">Upload VCE/PDF Files</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="separate">
+      <div class="separate__container container">
+
+        <div class="separate__content">
+          <section class="block">
+            <h2 class="heading heading--mb-large">Upload .VCE or PDF Files</h2>
+            <p class="block__text text text--grey text--lineheight text--mb-large">If you have .VCE or PDF exam file - Share it with others. Thank you for your help in advance!</p>
+            <form class="profile__form form">
+              <p class="profile__item">
+                <label class="form__label form__label--required" for="name">Your Name</label>
+                <input id="name" class="form__field form__field--primary" type="text" name="name">
+                <!-- <span class="val_error val_error--active">Please fill in `email` field.</span> -->
+              </p>
+              <p class="profile__item">
+                <label class="form__label form__label--required" for="email">Your Email</label>
+                <input id="email" class="form__field form__field--primary" type="email" name="email">
+                <!-- <span class="val_error val_error--active">Please fill in `email` field.</span> -->
+              </p>
+              <p class="profile__item profile__item--short">
+                <label class="form__label form__label--required" for="vendor">Vendor</label>
+                <select name="vendor" id="vendor">
+                  <option>Select a Vendor</option>
+                  <option value="1">ABA</option>
+                  <option value="2">ACAMS</option>
+                  <option value="3">ACFE</option>
+                  <option value="4">ACI</option>
+                  <option value="5">ACSM</option>
+                  <option value="6">Adobe</option>
+                  <option value="7">AFP</option>
+                  <option value="8">AHIMA</option>
+                  <option value="9">AHIP</option>
+                  <option value="10">AHLEI</option>
+                  <option value="11">AICPA</option>
+                  <option value="12">AIIM</option>
+                </select>
+                <!-- <span class="val_error val_error--active">Please fill in `email` field.</span> -->
+              </p>
+              <p class="profile__item profile__item--short">
+                <label class="form__label form__label--required" for="examkey">Supplier of questions (e.g. ExamKey)</label>
+                <input id="examkey" class="form__field form__field--primary" type="text" name="examkey">
+                <!-- <span class="val_error val_error--active">Please fill in `email` field.</span> -->
+              </p>
+              <p class="profile__item profile__item--short profile__item--short--alone">
+                <label class="form__label form__label--required" for="exam">Exam Code / Number</label>
+                <select name="exam" id="exam">
+                  <option>Select an Exam...</option>
+                  <option value="1">3I0-008</option>
+                  <option value="2">3I0-009</option>
+                </select>
+                <!-- <span class="val_error val_error--active">Please fill in `email` field.</span> -->
+              </p>
+              <p class="profile__item profile__item--short">
+                <label class="form__label" for="file-version">File version or date (e.g. 2019-07-01)</label>
+                <input id="file-version" class="form__field form__field--primary" type="text" name="file-version">
+              </p>
+              <p class="profile__item profile__item--short">
+                <label class="form__label" for="questions">Number of questions</label>
+                <input id="questions" class="form__field form__field--primary" type="text" name="questions">
+              </p>
+              <div class="profile__item profile__item--full-width form__field-wrapper form__field-wrapper--file">
+                <span class="form__label form__label--required">Supported file types: .vce, .pdf, .txt, .doc, .docx, .zip, .rar</span>
+                <div class="form__file-field-container">
+                  <label class="form__file-label button button--grey button--grey--secondary" for="file">+ Add File</label>
+                  <input id="file" class="form__file-field" type="file" name="file" accept=".vce, .pdf, .txt, .doc, .docx, .zip, .rar">
+                </div>
+                <span class="form__file-text text text--grey text--semibold text--center">Max Size<br>60 Mb</span>
+                <span class="form__file-text-upload text text--semibold" data-text></span>
+                <span class="val_error val_error--active">File upload failed. Please try again.</span>
+              </div>
+              <div class="profile__verification verification">
+                <div class="verification__container form__field-wrapper form__field-wrapper--verification">
+                  <label class="form__label form__label--required" for="verification">Verification</label>
+                  <input id="verification" class="form__field form__field--primary" type="text" name="verification">
+                  <div class="form__capcha">
+                    <div class="form__capcha-image-wrapper"><img class="form__capcha-image" src="images/dev/captcha.png" alt="Code"></div>
+                    <button class="form__capcha-button button button--secondary" type="button"><img src="images/icons/icon-refresh.png" alt=""><span class="visually-hidden">Refresh</span></button>
+                  </div>
+                  <!-- <span class="val_error val_error--active">Please fill in `email` field.</span> -->
+                </div>
+              </div>
+              <button class="profile__submit button button--secondary button--secondary--upload" type="submit">Upload</button>
+            </form>
+          </section>
+          <section class="block">
+            <h2 class="heading heading--mb">Other Sharing Options</h2>
+            <p class="text text--grey text--lineheight">Got more certification content to share? Email it to <a class="link link--invert" href="mailto:support@exam-labs.com">support@exam-labs.com</a>: Exam-Labs team will format it and publish.</p>
+          </section>
+        </div>
+
+        <aside class="separate__sidebar sidebar">
+          @@include('templates/blocks/vce.html')
+          @@include('templates/sidebar/hot.html')
+        </aside>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER  -->
+  @@include('templates/footer.html')
+
+  <!-- HOW IT WORKS MODAL -->
+  @@include('templates/modals/how-it-works.html')
+
+  <!-- FREE DEMO MODAL -->
+  @@include('templates/modals/free-demo.html')
+
+  <!-- BUTTON UP -->
+  @@include('templates/button-up.html')
+
+  <!-- SCRIPTS  -->
+  @@include('templates/overpage.html')
+</body>
+
+</html>

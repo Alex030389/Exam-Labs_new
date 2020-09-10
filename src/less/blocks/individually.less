@@ -1,0 +1,138 @@
+.individually {
+  padding: 0;
+}
+
+.individually__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.875rem;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid @border-grey-darker;
+  }
+}
+
+.individually__image-container {
+  order: -1;
+  display: block;
+  margin-right: 0.625rem;
+}
+
+.individually__image {
+  display: block;
+  margin: auto;
+  min-width: 4.375rem;
+  max-height: 6.25rem;
+}
+
+.individually__column {
+  width: 70%;
+}
+
+.individually__title {
+  margin-bottom: 0.625rem;
+  
+  font-size: 1.125rem;
+  line-height: 1.2;
+  text-decoration: underline;
+}
+
+.individually__details {
+  font-size: 0.9375rem;
+  line-height: 1.33;
+}
+
+.individually__button {
+  margin-top: 0.625rem;
+}
+
+@media (max-width: 1400px) {
+  .individually__item {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .individually__column {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .individually__image-container {
+    margin: 0 auto 0.9375rem;
+  }
+
+  .individually__button {
+    align-self: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .individually {
+    display: flex;
+    border: none;
+    border-radius: 0;
+  }
+
+  .individually__item {
+    flex-direction: row;
+    padding: 0 1.25rem;
+    width: calc(100% / 3);
+  
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+  }
+
+  .individually__image-container {
+    margin: 0 0.9375rem 0 0;
+  }
+
+  .individually__details {
+    &:last-of-type {
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  .individually__button {
+    align-self: flex-start;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .individually {
+    flex-wrap: wrap;
+    max-width: 42rem;
+    margin: 0 auto;
+  }
+
+  .individually__item {
+    width: 50%;
+
+    &:nth-child(n + 3) {
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .individually__title {
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 640px) {
+  .individually {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .individually__item {
+    width: 20rem;
+
+    &:nth-child(n + 2) {
+      margin-top: 3rem;
+    }
+  }
+}

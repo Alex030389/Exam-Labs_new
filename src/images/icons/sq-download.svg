@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+    <defs>
+        <path id="a" d="M124.722 126.865c-21.451 17.513-88.43 17.513-109.444 0-21.45-17.514-19.262-92.385 0-112.088 19.263-19.703 90.182-19.703 109.444 0s21.45 94.574 0 112.088"/>
+        <linearGradient id="b" x1="68.946%" x2="2.02%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#594CC3"/>
+            <stop offset="100%" stop-color="#2B8AEB"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <mask id="c" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <use fill="#3D4BC1" xlink:href="#a"/>
+            <path fill="url(#b)" d="M1.22 53.22C3.206 37.867 7.453 24.12 13.703 16.44c.483-.593.979-1.15 1.486-1.672C24.803 4.922 47.31 0 69.816 0c14.014 0 28.028 1.908 38.93 5.725 6.907 28.856-7.517 65.528-38.493 90.425-19.229 15.314-40.643 23.19-60.746 23.628C.721 104.772-1.8 77.068 1.221 53.22z" mask="url(#c)"/>
+        </g>
+        <g fill="#D9E0EC">
+            <path d="M54 80h6v12h-6zM69 53h6v18h-6z"/>
+            <path d="M90 86H54v6h36zM72 83l-9-15h18z"/>
+            <path d="M84 80h6v12h-6z"/>
+        </g>
+        <g fill="#2B2C30" opacity=".2">
+            <path d="M55 81h6v12h-6zM70 54h6v18h-6z"/>
+            <path d="M91 87H55v6h36zM73 84l-9-15h18z"/>
+            <path d="M85 81h6v12h-6z"/>
+        </g>
+        <g fill="#FFF">
+            <path d="M52 78h6v12h-6zM67 51h6v18h-6z"/>
+            <path d="M88 84H52v6h36zM70 81l-9-15h18z"/>
+            <path d="M82 78h6v12h-6z"/>
+        </g>
+    </g>
+</svg>

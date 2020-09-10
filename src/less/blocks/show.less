@@ -1,0 +1,26 @@
+.show-0-768,
+.show-0-480 {
+  display: none;
+}
+
+@media (max-width: @tablet-width) {
+  .show-992-higher {
+    display: none;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .show-768-higher {
+    display: none;
+  }
+
+  .show-0-768 {
+    display: block;
+  }
+}
+
+@media (max-width: @least-mobile-width) {
+  .show-0-480 {
+    display: block;
+  }
+}

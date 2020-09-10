@@ -1,0 +1,86 @@
+<section class="comments">
+  <h2 class="comments__heading heading heading--mb">Comments</h2>
+  <a class="comments__anchor link link--semibold link--reverse" href="#add-comment">+ Add Comment</a>
+  <ul class="comments__list list">
+    <li class="comments__item">
+      <div class="comments__header">
+        <i class="spritesheet-flags sprite-AO"></i>
+        <p class="comments__details">
+          <strong class="comments__author">Daniel Ntela</strong>
+          <span class="comments__time text text--small text--grey">Apr 26, 2020, 01:22 PM</span>
+        </p>
+      </div>
+      <div class="comments__text-container">
+        <p class="comment__text text text--grey">I must need to do this corse, because im fiber óptic splice and network, i want learn how to config router and switch.</p>
+      </div>
+    </li>
+    <li class="comments__item">
+      <div class="comments__header">
+        <i class="spritesheet-flags sprite-PK"></i>
+        <p class="comments__details">
+          <strong class="comments__author">Ishtiaq Ahmed</strong>
+          <span class="comments__time text text--small text--grey">Apr 8, 2020, 12:56 PM</span>
+        </p>
+      </div>
+      <div class="comments__text-container">
+        <p class="comment__text text text--grey">course requirements CCNA</p>
+      </div>
+    </li>
+    <li class="comments__item">
+      <div class="comments__header">
+        <i class="spritesheet-flags sprite-SO"></i>
+        <p class="comments__details">
+          <strong class="comments__author">Ridwaan</strong>
+          <span class="comments__time text text--small text--grey">Mar 14, 2020, 08:31 AM</span>
+        </p>
+      </div>
+      <div class="comments__text-container">
+        <p class="comment__text text text--grey">Thanks helpfull</p>
+      </div>
+    </li>
+    <li class="comments__item">
+      <div class="comments__header">
+        <i class="spritesheet-flags sprite-SO"></i>
+        <p class="comments__details">
+          <strong class="comments__author">mohamed abdikariin jaamac</strong>
+          <span class="comments__time text text--small text--grey">Feb 20, 2020, 08:23 AM</span>
+        </p>
+      </div>
+      <div class="comments__text-container">
+        <p class="comment__text text text--grey">thanks to help us make test</p>
+      </div>
+    </li>
+  </ul>
+  <h3 id="add-comment" class="comments__heading heading heading--mb">Add comment</h3>
+  <form class="comments__form form">
+    <p class="comments__form-item">
+      <label class="form__label form__label--required" for="name">Name</label>
+      <input id="name" class="form__field form__field--primary" type="text" name="name">
+      <span class="val_error val_error--active">Please fill in `email` field.</span>
+    </p>
+    <p class="comments__form-item">
+      <label class="form__label form__label--required" for="email">Email</label>
+      <input id="email" class="form__field form__field--primary" type="email" name="email" disabled value="sam@testking.com">
+      <span class="val_error val_error--active">Please fill in `email` field.</span>
+    </p>
+    @@if (context.rating) { @@include('comments-rating.html') }
+    <p class="comments__form-item comments__form-item--comment comments__form-item--full-width">
+      <label class="form__label form__label--required" for="comment">Comment</label>
+      <small class="comments__reminder text text--grey">Comments will be moderated and published within 1-4 hours</small>
+      <textarea name="comment" class="form__field form__field--primary form__field--textarea" id="comment"></textarea>
+      <span class="val_error val_error--active">Please fill in `email` field.</span>
+    </p>
+    <div class="comments__verification verification">
+      <div class="verification__container form__field-wrapper form__field-wrapper--verification">
+        <label class="form__label form__label--required" for="verification">Verification</label>
+        <input id="verification" class="form__field form__field--primary" type="text" name="verification">
+        <div class="form__capcha">
+          <div class="form__capcha-image-wrapper"><img class="form__capcha-image" src="images/dev/captcha.png" alt="Code"></div>
+          <button class="form__capcha-button button button--secondary" type="button"><img src="images/icons/icon-refresh.png" alt=""><span class="visually-hidden">Refresh</span></button>
+        </div>
+        <span class="val_error val_error--active">Please fill in `email` field.</span>
+      </div>
+    </div>
+    <button class="comments__submit button button--secondary" type="submit">Submit</button>
+  </form>
+</section>

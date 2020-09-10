@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('templates/head.html', {'title': 'Exam-Labs | Exam Page'})
+
+<body>
+  <!-- HEADER  -->
+  @@include('templates/header.html', {'search': true})
+
+  <!-- MAIN  -->
+  <main class="page-main">
+    <h1 class="visually-hidden">Exam-Labs Exam Name</h1>
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="">Microsoft Exams</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--disabled">
+            <a class="breadcrumbs__link">62-193 (Technology Literacy for Educators)</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="separate">
+      <div class="separate__container container">
+
+        <div class="separate__content">
+          <section class="block">
+            <h2 class="heading heading--mb-large">Pass Microsoft 62-193 Exam in First Attempt Easily
+              <br>
+              Real Exam Questions, Accurate & Verified Answers As Experienced in the Actual Test!
+              <br>
+              Instant Download, 30 Days Free Updates
+            </h2>
+            <section class="product">
+              <div class="product__block">
+                <span class="product__label">Verified by experts</span>
+                <figure class="product__image-wrapper">
+                  <picture class="product__image-container">
+                    <img class="product__image lazyload" data-src="images/dev/qa.png" alt="Product">
+                  </picture>
+                </figure>
+                <a class="product__link link link--invert link--semibold link--small" href="#">Get Unlimited Access to All Premium Files</a>
+              </div>
+              <div class="product__block">
+                <h3 class="product__heading heading">62-193 Premium File</h3>
+                <ul class="product__list list list--tick">
+                  <li class="product__item list__item">41 Questions & Answers</li>
+                  <li class="product__item list__item">Last Update: Apr 24, 2020</li>
+                </ul>
+              </div>
+              <div class="product__block">
+                <span class="product__new-price">$39.99</span>
+                <span class="product__old-price">$57.13</span>
+                <form>
+                  <button class="product__button button button--secondary" type="submit">Download Now</button>
+                </form>
+                <button class="product__link-modal button" type="button">Not Convinced?</button>
+              </div>
+            </section>
+          </section>
+          <section class="block">
+            <h2 class="block__heading heading">Download Free Microsoft 62-193 Exam Questions</h2>
+            <table class="table table--quaternary">
+              <colgroup>
+                <col class="table__col-1">
+                <col class="table__col-2">
+                <col class="table__col-3">
+                <col class="table__col-4">
+                <col class="table__col-5">
+              </colgroup>
+              <thead>
+                <tr class="table__row">
+                  <th class="table__title table__title--align-left">File Name</th>
+                  <th class="table__title">Views</th>
+                  <th class="table__title">Size</th>
+                  <th class="table__title">Downloads</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table__row table__row--border-top">
+                  <td>
+                    <a class="table__link" href="#">adobe<wbr>.pass4sure<wbr>.ad0-e308<wbr>.v2020-05-12<wbr>.by<wbr>.william<wbr>.36q<wbr>.vce</a>
+                  </td>
+                  <td class="table__text text text--center-768-higher text--no-wrap table__text--icon table__text--icon--eye">49</td>
+                  <td class="table__text text text--center-768-higher text--no-wrap table__text--icon table__text--icon--size">2 MB</td>
+                  <td class="table__text text text--center-768-higher text--no-wrap table__text--icon table__text--icon--download">5</td>
+                  <td class="text text--center-768-higher">
+                    <a class="link link--invert link--semibold link--smallest" href="#">Download</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          @@include('templates/blocks/vce-help.html', {'classes': ' notice--full-page'})
+          @@include('templates/blocks/exams.html', {'classes': ' block--from-sidebar'})
+          @@include('templates/blocks/comments.html')
+        </div>
+
+        <aside class="separate__sidebar sidebar">
+          @@include('templates/blocks/vce.html')
+          @@include('templates/blocks/exams.html', {'classes': ' block--sidebar'})
+        </aside>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER  -->
+  @@include('templates/footer.html')
+
+  <!-- HOW IT WORKS MODAL -->
+  @@include('templates/modals/how-it-works.html')
+
+  <!-- FREE DEMO MODAL -->
+  @@include('templates/modals/free-demo.html')
+
+  <!-- BUTTON UP -->
+  @@include('templates/button-up.html')
+
+  <!-- SCRIPTS  -->
+  @@include('templates/overpage.html')
+</body>
+
+</html>

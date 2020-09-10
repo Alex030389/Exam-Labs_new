@@ -1,0 +1,62 @@
+.button-up {
+  position: fixed;
+  right: -60px;
+  bottom: 110px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+
+  border: none;
+  outline: none;
+  background-image: @gradient-secondary;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.7);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  cursor: pointer;
+  z-index: 1;
+
+  transition: all 0.3s;
+
+  &--visible {
+    right: 50px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.button-up__arrow {
+  width: 23px;
+  height: 23px;
+  fill: #ffffff;
+  transform: rotate(90deg);
+}
+
+@media (max-width: @tablet-width) {
+  .button-up {
+    bottom: 130px;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .button-up {
+    right: -80px;
+    bottom: 125px;
+    width: 45px;
+    height: 45px;
+
+    &--visible {
+      right: 15px;
+    }
+  }
+
+  .order__steps {
+    max-width: 20rem;
+    margin: 0 auto;
+  }
+}

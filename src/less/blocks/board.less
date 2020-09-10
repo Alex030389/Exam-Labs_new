@@ -1,0 +1,21 @@
+.board {
+  padding: 1.875rem 1.25rem 2.1875rem;
+
+  background-image: @gradient-grey-secondary;
+  border-radius: 0.625rem;
+}
+
+.board__heading {
+  text-align: center;
+}
+
+@media (max-width: @least-mobile-width) {
+  .board {
+    margin: 0 -1.25rem;
+    padding: 1.875rem 1.25rem 2.1875rem;
+  
+    background-image: @gradient-grey-secondary;
+    border: none;
+    border-radius: 0;
+  }
+}

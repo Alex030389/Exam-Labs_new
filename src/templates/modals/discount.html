@@ -1,0 +1,47 @@
+<div class="overlay">
+  <div class="modal modal--discount">
+    <div class="modal__header modal__header--discount">
+      <h2 class="modal__heading heading heading--medium">
+        SPRING SALE: 30% DISCOUNT
+        <br>
+        This is ONE TIME OFFER
+      </h2>
+    </div>
+
+    <div class="modal__body modal__body--border-background">
+      <div class="modal__separate">
+        <div class="modal__image-container">
+          <picture class="modal__image-wrapper">
+            <img class="modal__image lazyload" data-src="images/dev/lab-qa-sg-sound-box.png" src="images/dev/lab-qa-sg-sound-box.png" alt="Offer Image">
+          </picture>
+          <div class="modal__label">
+            <span class="modal__label-text">You save</span>
+            <span class="modal__label-percent">30%</span>
+          </div>
+        </div>
+        <div class="modal__text-container">
+          <p class="modal__title text text--medium text--grey">Enter Your Email Address to Receive Your 30% Discount Code</p>
+          <form id="modal-discount" class="modal__form form" action="#" method="POST">
+            <p class="form__field-wrapper">
+              <label class="form__label form__label--required" for="modal-email">Email</label>
+              <input id="modal-email" class="modal__form-field form__field form__field--primary" type="email" name="modal-email" required>
+            </p>
+          </form>
+          <p class="modal__note text text--smaller text--grey">A confirmation link will be sent to this email address to verify your login</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal__footer">
+      <button form="modal-discount" class="button button--secondary" type="submit">GET YOU DISCOUNT CODE</button>
+      <p class="modal__footer-note">* We value your privacy. We will not rent or sell your email address.</p>
+    </div>
+
+    <button class="modal__close button button--close" type="button">
+      <span class="visually-hidden">Close modal</span>
+      <span aria-hidden="true">×</span>
+    </button>
+
+    <button class="modal__close-bottom button show-0-480">Close</button>
+  </div>
+</div>

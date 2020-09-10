@@ -1,0 +1,90 @@
+.text {
+  margin: 0;
+
+  &--grey {
+    color: @text-color-secondary;
+  }
+
+  &--green {
+    color: @success-color;
+  }
+
+  &--dark-green {
+    color: @text-color-quaternary;
+  }
+
+  &--smaller {
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+
+  &--small {
+    font-size: 0.9375rem;
+  }
+
+  &--medium {
+    font-size: 1.125rem;
+    line-height: 1.4;
+  }
+  
+  &--large {
+    font-size: 1.1875rem;
+    line-height: 1.58;
+  }
+  
+  &--extralarge {
+    font-size: 1.25rem;
+  }
+
+  &--light {
+    color: #ffffff;
+  }
+  
+  &--transparent {
+    opacity: 0.8;
+  }
+
+  &--semibold {
+    font-weight: 500;
+  }
+
+  &--lineheight {
+    line-height: 1.69;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--center-768-higher {
+    text-align: center;
+  }
+
+  &--mt-block {
+    margin-top: 3.125rem;
+  }
+
+  &--no-wrap {
+    white-space: nowrap;
+  }
+
+  &--mb--small {
+    margin-bottom: 0.9375rem;
+  }
+
+  &--mb {
+    margin-bottom: 1.25rem;
+  }
+
+  &--mb--large {
+    margin-bottom: 1.875rem;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .text {
+    &--center-768-higher {
+      text-align: left;
+    }
+  }
+}

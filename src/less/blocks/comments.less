@@ -1,0 +1,131 @@
+.comments {
+  position: relative;
+}
+
+.comments__heading {
+  padding-top: 3.125rem;
+}
+
+.comments__anchor {
+  position: absolute;
+  top: 3.5rem;
+  right: 0;
+}
+
+.comments__item {
+  border: 1px solid @border-grey-darker;
+  border-radius: 0.625rem;
+
+  &:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+}
+
+.comments__header {
+  display: flex;
+  align-items: center;
+  padding: 1.1875rem 1.875rem;
+  border-bottom: 1px solid @border-grey-darker;
+}
+
+.comments__author {
+  margin-bottom: 0.3125rem;
+}
+
+.comments__details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 0 0 1.25rem;
+}
+
+.comments__text-container {
+  padding: 1.5rem 1.875rem;
+}
+
+.comments__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 1.875rem;
+
+  border: 1px solid @border-grey-darker;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.625rem 1.9375rem 0.125rem #d9e0ec;
+}
+
+.comments__form-item {
+  margin: 0 0 1.875rem;
+
+  &:not(&--full-width) {
+    width: 48.65%;
+  }
+
+  &--full-width {
+    width: 100%;
+  }
+
+  &--comment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.comments__submit {
+  margin: 1.5rem 0 0 1.875rem;
+  min-width: 16.875rem;
+}
+
+.comments__reminder {
+  margin-bottom: 0.625rem;
+  font-size: 0.8125rem;
+}
+
+@media (max-width: @mobile-width) {
+  .comments__form-item {
+    margin: 0 0 1.667rem;
+
+    &:not(&--full-width) {
+      width: 100%;
+    }
+  }
+
+  .comments__submit {
+    flex-grow: 1;
+    min-width: 10rem;
+    max-width: 15rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .comments__form-item {
+    &--comment {
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+  
+  .comments__verification {
+    width: 100%;
+  }
+
+  .comments__submit {
+    margin: 1.667rem 0 0;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: @least-mobile-width) {
+  .comments__form {
+    margin: 0 -1.25rem;
+    padding: 0 1.25rem;
+
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,30 @@
+.tables__item {
+  margin-top: 2.5rem;
+}
+
+.tables__heading {
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: @mobile-width) {
+  .tables {
+    padding-top: 1.875rem;
+  }
+
+  .tables__item {
+    margin: 0 -1.25rem;
+    padding: 1.5rem 1.25rem;
+
+    &:not(:first-child) {
+      border-top: 1px solid @border-grey-darker;
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}

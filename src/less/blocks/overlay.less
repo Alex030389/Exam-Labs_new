@@ -1,0 +1,40 @@
+.overlay {
+  display: none;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1.875rem;
+
+  content: "";
+
+  background-color: @background-overlay;
+  opacity: 0;
+  transition: opacity 0.3s;
+  overflow: auto;
+  z-index: 3;
+
+  &--shown {
+    opacity: 1;
+  }
+
+  &--video {
+    padding: 0 1.875rem;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .overlay {
+    &--video {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: @least-mobile-width) {
+  .overlay {
+    padding: 0;
+  }
+}

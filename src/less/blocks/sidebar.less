@@ -1,0 +1,42 @@
+.sidebar {
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.sidebar__block-border {
+  padding: 1.875rem 1.25rem;
+  
+  border: 1px solid @border-grey-darker;
+  border-radius: 0.625rem;
+
+  &:not(:last-child) {
+    margin-bottom: 3.125rem;
+  }
+}
+
+.sidebar__link {
+  display: block;
+  margin-bottom: 3.125rem;
+  
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .sidebar__link {
+    padding-top: 3.125rem;
+  }
+}
+
+@media (max-width: @least-mobile-width) {
+  .sidebar__link {
+    padding-top: 0;
+  }
+
+  .sidebar__block-border {
+    padding: 0;
+    
+    border: none;
+    border-radius: 0;
+  }
+}

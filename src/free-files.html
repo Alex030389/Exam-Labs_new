@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('templates/head.html', {'title': 'Exam-Labs | Free Files'})
+
+<body>
+  <!-- HEADER  -->
+  @@include('templates/header.html', {'search': true})
+
+  <!-- MAIN  -->
+  <main class="page-main">
+    <h1 class="visually-hidden">Exam-Labs free files</h1>
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html">Home</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--disabled">
+            <a class="breadcrumbs__link">Free Files</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="separate">
+      <div class="separate__container container">
+
+        <div class="separate__content">
+          <section class="top top--files">
+            <h2 class="heading heading--mb-large">Popular Free VCE Files (Last 30 Days)</h2>
+            <table class="table table--secondary">
+              <colgroup>
+                <col class="table__col-1">
+                <col class="table__col-2">
+                <col class="table__col-3">
+                <col class="table__col-4">
+              </colgroup>
+              <thead>
+                <tr class="table__row">
+                  <th class="table__title">Vendor</th>
+                  <th class="table__title">Exam</th>
+                  <th class="table__title table__title--align-left">File Name</th>
+                  <th class="table__title"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table__row">
+                  <td class="table__cell-vendor">
+                    <a class="show-768-higher" href="#">
+                      <picture class="table__image-wrapper">
+                        <img class="table__image lazyload" data-src="images/vendors/logo-amazon.png" data-srcset="images/vendors/logo-amazon@2x.png 2x" src="images/vendors/logo-amazon.png" alt="Amazon">
+                      </picture>
+                    </a>
+                  </td>
+                  <td class="text text--center-768-higher">
+                    <span class="table__cell-title show-0-768">Exam</span>
+                    <a class="table__link text text--semibold" href="#">AWS Certified Solutions Architect -
+                      Associate</a>
+                  </td>
+                  <td>
+                    <span class="table__cell-title show-0-768">File Name</span>
+                    <a class="table__link"
+                      href="#">amazon<wbr>.testking<wbr>.aws certified solutions architect - associate<wbr>.v2020-02-11<wbr>.by<wbr>.dylan<wbr>.209q<wbr>.vce</a>
+                  </td>
+                  <td>
+                    <ul class="table__details-list list">
+                      <li class="table__details-item table__details-item--downloads table__text">408<span class="show-768-higher"> downloads</span></li>
+                      <li class="table__details-item table__details-item--qa table__text">84 Q&A</li>
+                      <li class="table__details-item table__details-item--date table__text">Aug 8, 2019</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell-vendor">
+                    <a class="show-768-higher" href="#">
+                      <picture class="table__image-wrapper">
+                        <img class="table__image lazyload" data-src="images/vendors/logo-microsoft.png" data-srcset="images/vendors/logo-microsoft@2x.png 2x" src="images/vendors/logo-microsoft.png" alt="Microsoft">
+                      </picture>
+                    </a>
+                  </td>
+                  <td class="text text--center-768-higher">
+                    <span class="table__cell-title show-0-768">Exam</span>
+                    <a class="table__link text text--semibold" href="#">AZ-900</a>
+                  </td>
+                  <td>
+                    <span class="table__cell-title show-0-768">File Name</span>
+                    <a class="table__link"
+                      href="#">microsoft<wbr>.certkiller<wbr>.az-900<wbr>.v2019-08-05<wbr>.by<wbr>.jerry<wbr>.84q<wbr>.vce</a>
+                  </td>
+                  <td>
+                    <ul class="table__details-list list">
+                      <li class="table__details-item table__details-item--downloads table__text">408<span class="show-768-higher"> downloads</span></li>
+                      <li class="table__details-item table__details-item--qa table__text">84 Q&A</li>
+                      <li class="table__details-item table__details-item--date table__text">Aug 8, 2019</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell-vendor">
+                    <a class="show-768-higher" href="#">
+                      <picture class="table__image-wrapper">
+                        <img class="table__image lazyload" data-src="images/vendors/logo-comptia.png" data-srcset="images/vendors/logo-comptia@2x.png 2x" src="images/vendors/logo-comptia.png" alt="CompTIA">
+                      </picture>
+                    </a>
+                  </td>
+                  <td class="text text--center-768-higher">
+                    <span class="table__cell-title show-0-768">Exam</span>
+                    <a class="table__link text text--semibold" href="#">SY0-501</a>
+                  </td>
+                  <td>
+                    <span class="table__cell-title show-0-768">File Name</span>
+                    <a class="table__link"
+                      href="#">comptia<wbr>.actualtests<wbr>.sy0-501<wbr>.v2020-04-06<wbr>.by<wbr>.aaron<wbr>.440q<wbr>.vce</a>
+                  </td>
+                  <td>
+                    <ul class="table__details-list list">
+                      <li class="table__details-item table__details-item--downloads table__text">408<span class="show-768-higher"> downloads</span></li>
+                      <li class="table__details-item table__details-item--qa table__text">84 Q&A</li>
+                      <li class="table__details-item table__details-item--date table__text">Aug 8, 2019</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+
+        <aside class="separate__sidebar sidebar">
+          @@include('templates/blocks/vce.html')
+          @@include('templates/sidebar/hot.html')
+        </aside>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER  -->
+  @@include('templates/footer.html')
+
+  <!-- HOW IT WORKS MODAL -->
+  @@include('templates/modals/how-it-works.html')
+
+  <!-- FREE DEMO MODAL -->
+  @@include('templates/modals/free-demo.html')
+
+  <!-- BUTTON UP -->
+  @@include('templates/button-up.html')
+
+  <!-- SCRIPTS  -->
+  @@include('templates/overpage.html')
+</body>
+
+</html>

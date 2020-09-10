@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('templates/head.html', {'title': 'Exam-Labs | Discussion'})
+
+<body>
+  <!-- HEADER  -->
+  @@include('templates/header.html', {'search': true})
+
+  <!-- MAIN  -->
+  <main class="page-main">
+    <h1 class="visually-hidden">Exam-Labs Discussion</h1>
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html">Home</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--disabled">
+            <a class="breadcrumbs__link">Discussion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="separate">
+      <div class="separate__container container">
+
+        <div class="separate__content">
+          <section class="block">
+            <h2 class="heading heading--mb-large">IT Exam Questions Discussion</h2>
+            <table class="table table--three-column">
+              <colgroup>
+                <col class="table__col-1">
+                <col class="table__col-2">
+                <col class="table__col-3">
+              </colgroup>
+              <thead>
+                <tr class="table__row">
+                  <th class="table__title table__title--align-left">Topic</th>
+                  <th class="table__title">Date</th>
+                  <th class="table__title">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table__row">
+                  <td class="text"><a class="table__link"
+                      href="#">050-720 question 3 discussion</a></td>
+                  <td class="text text--center text--small"><span class="table__date">Jul 25, 2017</span></td>
+                  <td class="text text--semibold text--center text--small">
+                    <span class="table__tick">answered</span>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="text"><a class="table__link"
+                      href="#">050-733 question 16 discussion</a></td>
+                  <td class="text text--center text--small"><span class="table__date">Jul 19, 2017</span></td>
+                  <td class="text text--semibold text--center text--small">
+                    <span class="table__tick">answered</span>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="text"><a class="table__link"
+                      href="#">100-101 question 156 discussion</a></td>
+                  <td class="text text--center text--small"><span class="table__date">Aug 7, 2017</span></td>
+                  <td class="text text--semibold text--center text--small">
+                    <span>open</span>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="text"><a class="table__link"
+                      href="#">100-101 question 175 discussion</a></td>
+                  <td class="text text--center text--small"><span class="table__date">Aug 29, 2018</span></td>
+                  <td class="text text--semibold text--center text--small">
+                    <span class="table__tick">answered</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+
+        <aside class="separate__sidebar sidebar">
+          @@include('templates/blocks/vce.html')
+          @@include('templates/sidebar/hot.html', {'classes': 'hot-sidebar--only-sidebar'})
+        </aside>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER  -->
+  @@include('templates/footer.html')
+
+  <!-- HOW IT WORKS MODAL -->
+  @@include('templates/modals/how-it-works.html')
+
+  <!-- FREE DEMO MODAL -->
+  @@include('templates/modals/free-demo.html')
+
+  <!-- BUTTON UP -->
+  @@include('templates/button-up.html')
+
+  <!-- SCRIPTS  -->
+  @@include('templates/overpage.html')
+</body>
+
+</html>

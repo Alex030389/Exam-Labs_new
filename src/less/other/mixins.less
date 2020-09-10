@@ -1,0 +1,44 @@
+.list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.border() {
+  border: 1px solid @border-grey-darker;
+  border-radius: 0.625rem;
+}
+
+.visually-hidden() {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visually-visible() {
+  position: initial;
+
+  width: initial;
+  height: initial;
+  margin: initial;
+  border: initial;
+  padding: initial;
+
+  white-space: initial;
+
+  clip-path: initial;
+
+  clip: initial;
+  overflow: initial;
+}

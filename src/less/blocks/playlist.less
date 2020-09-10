@@ -1,0 +1,71 @@
+.playlist__item {
+  display: flex;
+  align-items: center;
+  padding: 0.875rem 1.875rem;
+
+  border-top: 1px solid @border-grey-darker;
+
+  &--current {
+    background-color: @background-grey;
+  }
+
+  &--playing {
+    .playlist__button {
+      border-color: @brand-color;
+
+      &::before {
+        transform: translate(-50%, -50%);
+        width: 0.625rem;
+        height: 0.8125rem;
+    
+        background-image: linear-gradient(to right, @brand-color 0%, @brand-color 30%, transparent 30%, transparent 70%, @brand-color 70%);
+      }
+    }
+  }
+}
+
+.playlist__button {
+  position: relative;
+  display: block;
+  flex-shrink: 0;
+  margin-right: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+
+  border: 1px solid @success-color;
+  border-radius: 50%;
+
+  transition: none;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    width: 0.625rem;
+    height: 0.75rem;
+    content: "";
+
+    background: url("../images/icons/triangle-green.svg") no-repeat center;
+  }
+}
+
+.playlist__title {
+  margin-right: 1rem;
+  font-size: 0.9375rem;
+  cursor: pointer;
+}
+
+.playlist__time {
+  margin-left: auto;
+}
+
+@media (max-width: @mobile-width) {
+  .playlist__item {
+    padding: 0.875rem 1rem;
+  }
+
+  .playlist__title {
+    font-weight: 500;
+  }
+}

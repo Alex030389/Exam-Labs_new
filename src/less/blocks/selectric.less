@@ -1,0 +1,92 @@
+.selectric-wrapper {
+  .selectric {  
+    height: 3.125rem;
+
+    border: 1px solid @border-grey-darker;
+    border-radius: 0.3125rem;
+    background-color: @background-grey;
+  }
+
+  .label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0 4.375rem 0 1.25rem;
+    width: 100%;
+    height: 100%;
+  
+    color: @text-color-primary;
+    font-size: 0.9375rem;
+    font-weight: 500;
+  }
+
+  .button {
+    width: 3.125rem;
+    height: 3.125rem;
+    background-color: transparent;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 18px;
+      content: "";
+
+      background-color: @border-grey-darker;
+    }
+
+    &::after {
+      border-top-color: @border-grey-darker;
+    }
+  }
+
+  .selectric-items {
+    background-color: #fff;
+    border: 1px solid #dbe1ed;
+    border-radius: 4px;
+    box-shadow: none;
+
+    overflow: hidden;
+
+    li {
+      padding: 0.375rem 0.375rem 0.375rem 1.25rem;
+
+      color: #6f727c;
+      font-size: 0.9375rem;
+      font-weight: 500;
+
+      &.selected,
+      &.highlighted,
+      &:hover {
+        color: @text-color-primary;
+        background-color: @background-grey;
+      }
+    }
+  }
+
+  &.selectric-hover {
+    .selectric {
+      .button {
+        &::after {
+          border-top-color: @border-grey-darker;
+        }
+      }
+    }
+  }
+
+  &.selectric-open {
+    .selectric {
+      border: 1px solid @success-color;
+      background-color: #ffffff;
+
+      .button {
+        &::after {
+          border-top-color: #888888;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}

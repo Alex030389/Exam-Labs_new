@@ -1,0 +1,33 @@
+.images-slider {
+  padding: 1.5625rem 0;
+
+  border: 1px solid @border-grey-darker;
+  border-radius: 0.625rem;
+}
+
+.images-slider__container {
+  height: 100%;
+}
+
+.images-slider__list {
+  align-items: center;
+}
+
+.images-slider__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30.9375rem;
+  transition: all 0.3s;
+  border: 1px solid red;
+
+  &:not(.swiper-slide-active) {
+    height: 17rem;
+    opacity: 0.3;
+  }
+}
+
+.images-slider__image {
+  display: block;
+  max-height: 100%;
+}

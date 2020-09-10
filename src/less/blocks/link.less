@@ -1,0 +1,48 @@
+.link {
+  font-size: inherit;
+
+  &--smallest {
+    font-size: 0.82rem;
+  }
+
+  &--small {
+    font-size: 0.9375rem;
+  }
+
+  &--invert {
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  &--large {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  &--grey {
+    color: @text-color-secondary;
+
+    &:hover,
+    &:focus {
+      color: @text-color-secondary;
+    }
+  }
+
+  &--semibold {
+    font-weight: 500;
+  }
+
+  &--inherit {
+    color: inherit;
+    font-size: inherit;
+
+    &:hover,
+    &:focus {
+      color: inherit;
+    }
+  }
+}

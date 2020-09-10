@@ -1,0 +1,31 @@
+.header-search {
+  flex-grow: 1;
+}
+
+.header-search__form {
+  max-width: 31.25rem;
+}
+
+.header-search__field {
+  padding-left: 2.55rem;
+
+  &:focus {
+    & + button {
+      svg {
+        fill: @icon-color-blue;
+      }
+    }
+  }
+}
+
+.header-search__submit {
+  position: absolute;
+  top: 50%;
+  left: 0.625rem;
+  transform: translateY(-50%);
+}
+
+.header-search__icon {
+  display: block;
+  fill: @icon-color-grey;
+}

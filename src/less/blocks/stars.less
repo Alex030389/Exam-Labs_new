@@ -1,0 +1,44 @@
+.stars {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
+.stars__item {
+  padding-right: 1rem;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    .stars__icon {
+      fill: #ffc465;
+      stroke: #ffc465;
+    }
+
+    & ~ .stars__item {
+      .stars__icon {
+        fill: #ffc465;
+        stroke: #ffc465;
+      }
+    }
+  }
+}
+
+.stars__input {
+  &:checked {
+    & ~ .stars__item {
+      .stars__icon {
+        fill: #ffc465;
+        stroke: #ffc465;
+      }
+    }
+  }
+}
+
+.stars__icon {
+  width: 2.0625rem;
+  height: 2.0625rem;
+
+  fill: @background-grey;
+  stroke: #dbe1ed;
+}

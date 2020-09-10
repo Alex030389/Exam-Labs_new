@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('templates/head.html', {'title': 'Exam-Labs | Unlimited Subscription'})
+
+<body>
+  <!-- HEADER  -->
+  @@include('templates/header.html', {'search': true})
+
+  <!-- MAIN  -->
+  <main class="page-main">
+    <h1 class="visually-hidden">Exam-Labs unlimited subscription</h1>
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html">Home</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--disabled">
+            <a class="breadcrumbs__link">Unlimited Subscription</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="premium">
+      <div class="container">
+        <h2 class="heading heading--mb-large">Exam-Labs Premium Subscription</h2>
+        <div class="premium__separate">
+          <div class="premium__half">
+            <section class="premium__features">
+              <h3 class="premium__features-title heading heading--small">Download Quality. Exam-Labs Certified.</h3>
+              <p class="premium__features-text text text--grey text--lineheight">
+                Get <span class="text text--green text--semibold">Unlimited Access</span> to the all Exam-Labs PREMIUM VCE files! Take advantage of premium VCE Files which are guaranteed by Exam-Labs!
+              </p>
+              <ul class="premium__features-list list list--tick">
+                <li class="list__item">Guaranteed to have Real Exam Questions</li>
+                <li class="list__item">100% Accurate & Verified Answers</li>
+                <li class="list__item">Fast Free Updates to Cover Latest Pool of Questions</li>
+                <li class="list__item">Instant Download</li>
+                <li class="list__item">98.6% Pass Rate</li>
+              </ul>
+            </section>
+          </div>
+          <div class="premium__half">
+            <section class="screenshots">
+              <h3 class="visually-hidden">Screenshots</h3>
+              <div class="screenshots__slider screenshots__slider--half-width swiper-container">
+                <ul class="screenshots__list list swiper-wrapper">
+                  <li class="screenshots__item swiper-slide">
+                    <img class="screenshots__image lazyload" data-src="images/dev/screen1.png" src="images/dev/screen1.png" alt="Screenshot 1">
+                  </li>
+                  <li class="screenshots__item swiper-slide">
+                    <img class="screenshots__image lazyload" data-src="images/dev/screen2.png" src="images/dev/screen2.png" alt="Screenshot 2">
+                  </li>
+                  <li class="screenshots__item swiper-slide">
+                    <img class="screenshots__image lazyload" data-src="images/dev/screen3.png" src="images/dev/screen3.png" alt="Screenshot 3">
+                  </li>
+                  <li class="screenshots__item swiper-slide">
+                    <img class="screenshots__image lazyload" data-src="images/dev/screen4.png" src="images/dev/screen4.png" alt="Screenshot 4">
+                  </li>
+                  <li class="screenshots__item swiper-slide">
+                    <img class="screenshots__image lazyload" data-src="images/dev/screen5.png" src="images/dev/screen5.png" alt="Screenshot 5">
+                  </li>
+                </ul>
+                <button class="screenshots__slider-button button button--slider button--slider--prev" type="button"><span class="visually-hidden">Previous</span></button>
+                <button class="screenshots__slider-button button button--slider button--slider--next" type="button"><span class="visually-hidden">Next</span></button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="options">
+      <div class="container">
+        <h2 class="options__heading heading">Subscription Options</h2>
+        <form id="subscription" class="options__form form" action="#" method="POST">
+          <fieldset class="options__form-fieldset form__fieldset">
+            <legend class="options__form-legend form__legend text text--grey">Please select your preferred subscription below:</legend>
+            <ul class="options__list list">
+              <li class="options__item">
+                <input class="options__input js-unlimited-option visually-hidden" type="radio" name="subscription" value="1" id="every1month" data-value="55.99" checked>
+                <div class="options__card">
+                  <h3 class="options__title">Pay mounthly</h3>
+                  <p class="options__subtitle text text--grey text--extralarge">Billed every month</p>
+                  <p class="options__price">
+                    <span class="options__old-price">$79.99</span>
+                    <span class="options__new-price"><sup>$</sup>55.99</span>
+                    <span class="options__price-additional text text--medium text--grey">/month</span>
+                  </p>
+                  <label class="options__label" for="every1month"><span class="visually-hidden">Billed every month</span></label>
+                </div>
+              </li>
+              <li class="options__item">
+                <input class="options__input js-unlimited-option visually-hidden" type="radio" name="subscription" value="2" id="every3month" data-value="125.98">
+                <div class="options__card">
+                  <h3 class="options__title">Pay quarterly</h3>
+                  <p class="options__subtitle text text--grey text--extralarge">Billed every 3 month</p>
+                  <p class="options__price">
+                    <span class="options__old-price">$59.99</span>
+                    <span class="options__new-price"><sup>$</sup>41.99</span>
+                    <span class="options__price-additional text text--medium text--grey">/month</span>
+                  </p>
+                  <label class="options__label" for="every3month"><span class="visually-hidden">Billed every 3 month</span></label>
+                </div>
+              </li>
+              <li class="options__item">
+                <input class="options__input js-unlimited-option visually-hidden" type="radio" name="subscription" value="2" id="every6month" data-value="167.96">
+                <div class="options__card">
+                  <h3 class="options__title">Pay every 6 month</h3>
+                  <p class="options__subtitle text text--grey text--extralarge">Billed every 6 month</p>
+                  <p class="options__price">
+                    <span class="options__old-price">$39.99</span>
+                    <span class="options__new-price"><sup>$</sup>27.99</span>
+                    <span class="options__price-additional text text--medium text--grey">/month</span>
+                  </p>
+                  <label class="options__label" for="every6month"><span class="visually-hidden">Billed every 6 month</span></label>
+                </div>
+              </li>
+              <li class="options__item">
+                <input class="options__input js-unlimited-option visually-hidden" type="radio" name="subscription" value="2" id="every12month" data-value="277.12">
+                <div class="options__card">
+                  <h3 class="options__title">Pay annually</h3>
+                  <p class="options__subtitle text text--grey text--extralarge">Billed every 12 month</p>
+                  <p class="options__price">
+                    <span class="options__old-price">$32.99</span>
+                    <span class="options__new-price"><sup>$</sup>23.09</span>
+                    <span class="options__price-additional text text--medium text--grey">/month</span>
+                  </p>
+                  <label class="options__label" for="every12month"><span class="visually-hidden">Billed every 12 month</span></label>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+        <div class="options__centeried-wrapper">
+          <div class="options__confirmation">
+            <p class="options__total">
+              <span class="options__total-text">Total Due:</span>
+              <span class="options__total-price"></span>
+            </p>
+            <button class="options__submit button button--secondary button--secondary--star" type="submit">Get Premium</button>
+          </div>
+          <div class="options__safety safety">
+            <ul class="safety__list list">
+              <li class="safety__item">
+                <img class="safety__image lazyload"
+                  data-src="images/dev/cards-logo/visa-logo.png"
+                  data-srcset="images/dev/cards-logo/visa-logo@2x.png 2x, images/dev/cards-logo/visa-logo@3x.png 3x"
+                  src="images/dev/cards-logo/visa-logo.png"
+                  alt="Visa"
+                >
+              </li>
+              <li class="safety__item">
+                <img class="safety__image lazyload"
+                  data-src="images/dev/cards-logo/mastercard-logo.png"
+                  data-srcset="images/dev/cards-logo/mastercard-logo@2x.png 2x, images/dev/cards-logo/mastercard-logo@3x.png 3x"
+                  src="images/dev/cards-logo/mastercard-logo.png"
+                  alt="Mastercard"
+                >
+              </li>
+              <li class="safety__item">
+                <img class="safety__image lazyload"
+                  data-src="images/dev/cards-logo/maestrocard-logo.png"
+                  data-srcset="images/dev/cards-logo/maestrocard-logo@2x.png 2x, images/dev/cards-logo/maestrocard-logo@3x.png 3x"
+                  src="images/dev/cards-logo/maestrocard-logo.png"
+                  alt="Maestrocard"
+                >
+              </li>
+              <li class="safety__item">
+                <img class="safety__image lazyload"
+                  data-src="images/dev/cards-logo/american-express-card-logo.png"
+                  data-srcset="images/dev/cards-logo/american-express-card-logo@2x.png 2x, images/dev/cards-logo/american-express-card-logo@3x.png 3x"
+                  src="images/dev/cards-logo/american-express-card-logo.png"
+                  alt="American Express"
+                >
+              </li>
+              <li class="safety__item">
+                <img class="safety__image lazyload"
+                  data-src="images/dev/cards-logo/solo-logo.png"
+                  data-srcset="images/dev/cards-logo/solo-logo@2x.png 2x, images/dev/cards-logo/solo-logo@3x.png 3x"
+                  src="images/dev/cards-logo/solo-logo.png"
+                  alt="Solo"
+                >
+              </li>
+              <li class="safety__item">
+                <img class="safety__image lazyload"
+                  data-src="images/dev/cards-logo/jcb-logo.png"
+                  data-srcset="images/dev/cards-logo/jcb-logo@2x.png 2x, images/dev/cards-logo/jcb-logo@3x.png 3x"
+                  src="images/dev/cards-logo/jcb-logo.png"
+                  alt="JCB"
+                >
+              </li>
+            </ul>
+            <p class="safety__text text text--grey">Your purchase with Exam-Labs is safe and fast. Your products will be available for immediate download after your payment has been received.</p>
+          </div>
+          @@include('templates/blocks/vce-help.html', {'elementClass': 'options__notice '})
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER  -->
+  @@include('templates/footer.html')
+
+  <!-- DISCOUNT MODAL -->
+  @@include('templates/modals/discount.html')
+
+  <!-- HOW IT WORKS MODAL -->
+  @@include('templates/modals/how-it-works.html')
+
+  <!-- BUTTON UP -->
+  @@include('templates/button-up.html')
+
+  <!-- SCRIPTS  -->
+  @@include('templates/overpage.html')
+</body>
+
+</html>

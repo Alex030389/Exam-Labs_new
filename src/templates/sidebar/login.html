@@ -1,0 +1,38 @@
+<section class="login">
+  <div class="login__part">
+    <form class="login__form form">
+      <h3 class="login__heading heading">Sign Up as a Reseller</h3>
+      <p class="login__item form__field-wrapper">
+        <label class="form__label form__label--required" for="email">Email</label>
+        <input id="email" class="form__field form__field--primary" type="email" name="email">
+        <span class="val_error val_error--active">Please fill in `email` field.</span>
+      </p>
+      <p class="login__item form__field-wrapper">
+        <label class="form__label form__label--required" for="password">Password</label>
+        <input id="password" class="form__field form__field--primary" type="password" name="password">
+      </p>
+      <p class="login__item form__field-wrapper">
+        <label class="form__label form__label--required" for="rep-pass">Repeat Password</label>
+        <input id="rep-pass" class="form__field form__field--primary" type="password" name="rep-pass">
+      </p>
+      <button class="login__button button button--secondary" type="submit">Sign Up</button>
+    </form>
+    <button class="login__button login__button--part button button--grey" type="button" data-part="2">I already have an account</button>
+  </div>
+  <div class="login__part">
+    <form class="login__form form">
+      <h3 class="login__heading heading">Sign In as a Reseller</h3>
+      <p class="login__item form__field-wrapper">
+        <label class="form__label form__label--required" for="sign-in-email">Email</label>
+        <input id="sign-in-email" class="form__field form__field--primary" type="email" name="email">
+      </p>
+      <p class="login__item login__item--no-mb form__field-wrapper">
+        <label class="form__label form__label--required" for="sign-in-password">Password</label>
+        <input id="sign-in-password" class="form__field form__field--primary" type="password" name="password">
+      </p>
+      <a class="login__help-link link link--semibold link--small link--grey" href="#">Forgot Password?</a>
+      <button class="login__button button button--secondary" type="submit">Sign In</button>
+    </form>
+    <button class="login__button login__button--part button button--grey" type="button" data-part="1">I don't have an account</button>
+  </div>
+</section>

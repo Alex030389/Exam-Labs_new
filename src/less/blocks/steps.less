@@ -1,0 +1,253 @@
+.steps {
+  counter-reset: myCounter;
+  display: flex;
+
+  &--modal {
+    .steps__item {
+      &:first-child {
+        .steps__icon {
+          &::before {
+            left: -0.6875rem;
+          }
+        }
+      }
+
+      &:not(:last-child) {
+        &::before {
+          top: 1.8125rem;
+          width: 4rem;
+          height: 4rem;
+      
+          background-size: auto;
+        }
+      }
+    }
+
+    .steps__icon {
+      width: 8.75rem;
+      height: 8.75rem;
+    
+      &::before {
+        top: -1.5625rem;
+        left: -1.25rem;
+
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+.steps__item {
+  position: relative;
+  padding: 0 1.25rem;
+  width: calc(100% / 3);
+
+  z-index: 1;
+
+  &:not(:last-child) {
+    &::before {
+      position: absolute;
+      top: 1.8125rem;
+      right: 0;
+      transform: translateX(50%);
+      width: 2.3125rem;
+      height: 2.3125rem;
+      content: "";
+  
+      background: url("../images/icons/slider-arrow-grey.svg") no-repeat center;
+      background-size: 0.5rem;
+      border: 1px solid @border-grey-darker;
+      border-radius: 50%;
+    }
+  }
+
+  &:first-child {
+    .steps__icon {
+      &::before {
+        left: -0.5rem;
+      }
+    }
+  }
+}
+
+.steps__icon {
+  position: relative;
+  display: block;
+  margin: 0 auto 1.875rem;
+  width: 5.9375rem;
+  height: 5.9375rem;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &::before {
+    position: absolute;
+    top: -0.8125rem;
+    left: -1rem;
+
+    counter-increment: myCounter;
+    content: counter(myCounter);
+
+    color: #dbe1ed;
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    z-index: -1;
+  }
+
+  &--download {
+    background-image: url("../images/icons/sq-download.svg");
+  }
+
+  &--gear {
+    background-image: url("../images/icons/sq-gear.svg");
+  }
+
+  &--checkmark {
+    background-image: url("../images/icons/sq-checkmark.svg");
+  }
+
+  &--people {
+    background-image: url("../images/icons/sq-people.png");
+  }
+
+  &--bag {
+    background-image: url("../images/icons/sq-bag.png");
+  }
+
+  &--pig {
+    background-image: url("../images/icons/sq-pig.png");
+  }
+}
+
+.steps__title {
+  margin-bottom: 0.625rem;
+
+  font-weight: 500;
+  line-height: 1.43;
+  text-align: center;
+}
+
+.steps__text {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.steps__link {
+  color: #36475c;
+  font-weight: 500;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: #36475c;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .steps__item {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .steps {
+    display: block;
+    
+    &--modal {
+      .steps__item {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+
+        &:first-child {
+          .steps__icon {
+            &::before {
+              left: -1.7rem;
+            }
+          }
+        }
+
+        &:last-child {
+          .steps__title {
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .steps__icon {
+        margin: 0 2rem;
+        width: 4.66rem;
+        height: 4.66rem;
+    
+        &::before {
+          top: 50%;
+          left: -2rem;
+          transform: translateY(-50%);
+        }
+      }
+
+      .steps__title {
+        margin-bottom: 0;
+        width: calc(100% - 8.66rem);
+
+        font-size: 1rem;
+        text-align: left;
+      }
+
+      .steps__text {
+        padding-top: 1.33rem;
+        width: 100%;
+
+        text-align: left;
+
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .steps__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+
+    &:not(:last-child) {
+      margin-bottom: 1.875rem;
+    }
+  }
+
+  .steps__icon {
+    margin-bottom: 0.625rem;
+    width: 6.33rem;
+    height: 6.33rem;
+
+    &::before {
+      top: -0.7rem;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .steps {
+    &--modal {
+      .steps__icon {
+        margin-right: 1.42rem;
+      }
+
+      .steps__title {
+        width: calc(100% - 8.08rem);
+      }
+    }
+  }
+}

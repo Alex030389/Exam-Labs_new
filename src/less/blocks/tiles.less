@@ -1,0 +1,150 @@
+.tiles__title {
+  margin: 0;
+  padding: 1.125rem 0;
+  width: calc(100% - 0.005px); // For smooth render in the chrome
+
+  color: @text-color-secondary;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  text-align: center;
+
+  background-color: @background-grey;
+  border: 1px solid @border-grey-darker;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+}
+
+.tiles__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tiles__item {
+  margin-top: -1px;
+  width: calc(100% / 6);
+  min-height: 9.5rem;
+
+  border: 1px solid @border-grey-darker;
+
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: #594cc3;
+    z-index: 1;
+  }
+
+  &:not(:nth-child(6n + 1)) {
+    margin-left: -1px;
+    width: calc(100% / 6 + 1px);
+  }
+}
+
+.tiles__link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.875rem 0.625rem 1.125rem;
+  height: 100%;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &--with-title {
+    padding: 1.875rem 0 1.875rem;
+  }
+}
+
+.tiles__image-wrapper {
+  flex-grow: 1;
+  display: flex;
+  margin: auto;
+  max-width: 9.375rem;
+  height: 70%;  
+}
+
+.tiles__image {
+  flex-shrink: 0;
+  display: block;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto;
+
+  font-family: 'object-fit: contain; object-position: center;';
+}
+
+.tiles__text {
+  align-self: flex-end;
+  display: inline-block;
+  padding-top: 1rem;
+  width: 100%;
+
+  text-align: center;
+  vertical-align: top;
+}
+
+.tiles__item-title {
+  margin: 0 auto auto;
+}
+
+@media (max-width: @tablet-width) {
+  .tiles__heading {
+    margin: 0 -1.25rem 0;
+    padding: 1rem 1.25rem;
+
+    font-weight: 700;
+    background-color: @background-grey;
+  }
+
+  .tiles__title {
+    display: none;
+  }
+
+  .tiles__list {
+    margin: 0 -1.25rem;
+  }
+  
+  .tiles__item {
+    width: 50%;
+    min-height: 9rem;
+
+    &:not(:nth-child(6n + 1)) {
+      width: calc(50% + 1px);
+    }
+
+    &:nth-child(odd) {
+      margin-left: 0;
+
+      width: 50%;
+    }
+  }
+
+  .tiles__link {
+    &--with-title {
+      align-items: flex-start;
+      align-content: center;
+    }
+  }
+
+  .tiles__item-title {
+    margin-bottom: 0;
+
+    font-size: 1.0625rem;
+    font-weight: 700;
+  }
+
+  .tiles__image-wrapper {
+    max-width: 8.125rem;
+  }
+
+  .tiles__text {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: @least-mobile-width) {
+  .tiles__item-title {
+    font-size: 0.9375rem;
+  }
+}

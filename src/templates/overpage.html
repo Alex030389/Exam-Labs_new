@@ -1,0 +1,47 @@
+<script src="js/jquery-3.5.1.min.js"></script>
+<script>
+  function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    function calcTimerTime() {
+      hours = parseInt(timer / 3600, 10);
+      minutes = parseInt((timer - hours * 3600) / 60, 10);
+      seconds = parseInt(timer % 60, 10);
+
+      hours = hours < 10 ? "0" + hours : hours;
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      if (seconds < 0) seconds = 0;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      display.textContent = hours + ":" + minutes + ":" + seconds;
+
+      if (--timer < 0) {
+        timer = duration;
+      }
+    }
+    calcTimerTime();
+    setInterval(calcTimerTime, 1000);
+  }
+
+  window.onload = function () {
+    var fiveMinutes = 7200,
+      display = document.querySelector('.header-notice__timer');
+    startTimer(fiveMinutes, display);
+  };
+
+  function closeAdvStripe() {
+    let closeBtn = document.querySelector('.header-notice__close');
+    let headerAdv = document.querySelector('.header-notice');
+    if (closeBtn) {
+      headerAdv.classList.toggle('header-notice--shown');
+      setCookie('toppromostripe', 1, 0.02);
+      $.ajax({
+        method: 'post',
+        data: {
+          action: 'addDefaultPromo',
+        },
+        cache: false
+      });
+    }
+  }
+</script>
+<script src="js/all.js"></script>
